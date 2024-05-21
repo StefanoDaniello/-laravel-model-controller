@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MovieController;
+use App\Http\Controllers\BookController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,6 +18,9 @@ use App\Http\Controllers\MovieController;
 Route::get('/', function () {return view('home');})->name('home');
 
 Route::get('/movies', [MovieController::class,'index'])->name('movies');
+
+Route::get('/books', [BookController::class,'index'])->name('books');
+
 
 
 Route::fallback(function () {

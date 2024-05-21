@@ -18,6 +18,7 @@
                 <a class="nav-link {{Route::currentRouteName() == 'movies' ? 'active' : ''}}" aria-current="page" href="{{route('movies')}}">Movies</a>
             </li>
             <li class="nav-item">
+                <a class="nav-link {{Route::currentRouteName() == 'books' ? 'active' : ''}}" aria-current="page" href="{{route('books')}}">Books</a>
             </li>
         </ul>
         </div>
