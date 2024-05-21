@@ -11,4 +11,13 @@ class BookController extends Controller
         $books = Book::all();
         return view('books.index', compact('books'));
     }
+    public function show($id){
+        $book = Book::find($id);
+        if($book){
+            return view('books.show', compact('book'));
+        }else{
+            return abort(404);
+        }
+        
+    }
 }

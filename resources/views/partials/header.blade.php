@@ -15,10 +15,10 @@
                 <a class="nav-link {{Route::currentRouteName() == 'home' ? 'active' : ''}}" aria-current="page" href="{{route('home')}}">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link {{Route::currentRouteName() == 'movies' ? 'active' : ''}}" aria-current="page" href="{{route('movies')}}">Movies</a>
+                <a class="nav-link {{Route::currentRouteName() == 'movies.index' ? 'active' : ''}}" aria-current="page" href="{{route('movies.index')}}">Movies</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link {{Route::currentRouteName() == 'books' ? 'active' : ''}}" aria-current="page" href="{{route('books')}}">Books</a>
+                <a class="nav-link {{Route::currentRouteName() == 'books.index' ? 'active' : ''}}" aria-current="page" href="{{route('books.index')}}">Books</a>
             </li>
         </ul>
         </div>
