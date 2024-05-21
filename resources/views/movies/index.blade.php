@@ -14,7 +14,7 @@
                             <img src="{{$movie->image}}"  alt="item.series">
                         </div>
                         <div class="card-body">
-                            <h6 class="card-title">{{$movie->title}}</h6>
+                        <h5 class="card-title" id="title-movie"><a href="{{route('books.show', $movie->id)}}">{{$movie->title}}</a></h5>
                             <p class="card-text">{{$movie->original_title}}</p>
                             <p class="card-text">{{$movie->date}}</p>
                         </div>
@@ -40,4 +40,14 @@
        border-radius: 10px;
        overflow: hidden;
    }
+   #title-movie{
+        a{
+            color: black;
+            text-decoration: none;
+        }
+        a:hover{
+        color: aqua;
+        text-decoration: underline;
+        }
+    }
 </style>

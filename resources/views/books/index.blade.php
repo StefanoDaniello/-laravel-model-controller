@@ -14,7 +14,7 @@
                             <img src="{{$book->cover_image}}"  alt="item.series">
                         </div>
                         <div class="card-body">
-                            <h5 class="card-title">{{$book->title}}</h5>
+                            <h5 class="card-title" id="title-book"><a href="{{route('books.show', $book->id)}}">{{$book->title}}</a></h5>
                             <p class="card-text">{{$book->ploat}}</p>
                         </div>
                     </div>
@@ -38,5 +38,17 @@
        height: 500px;
        border-radius: 10px;
        overflow: hidden;
-   }
+    }
+    #title-book{
+        a{
+            color: black;
+            text-decoration: none;
+        }
+        a:hover{
+        color: aqua;
+        text-decoration: underline;
+        }
+    }
+   
+
 </style>
