@@ -12,3 +12,16 @@ $fa-font-path: "../webfonts" !default;
 img{
     width: 100%;
 }
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: grid;
+    grid-template-rows: 1fr auto;
+}
+
+.content {
+    padding: 20px;
+}

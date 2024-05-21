@@ -5,7 +5,7 @@
 
    
     <div class="container text-center ">
-    <h1>{{$book->title}}</h1>
+        <h1>{{$book->title}}</h1>
         <div class="row d-flex justify-content-center">
                 <div class="card">
                     <div class="card-img">
@@ -37,4 +37,5 @@
        border-radius: 10px;
        overflow: hidden;
    }
+
 </style>

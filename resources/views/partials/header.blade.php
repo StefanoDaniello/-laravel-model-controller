@@ -32,5 +32,6 @@
         overflow: hidden;
         aspect-ratio: 1/1;
         border-radius: 50%;
+        margin: 0px 10px;
     }
 </style>

@@ -1,4 +1,4 @@
-<footer class="bg-dark text-white">
+<footer class="bg-dark text-white ">
     <p class="mt-3 mb-0">&copy; {{ date('Y') }}. All Rights Reserved.</p>
 </footer>
 
@@ -9,5 +9,6 @@
        display: flex;
        align-items: center;
        justify-content: center;
+       flex-direction: column;
    }
 </style>
