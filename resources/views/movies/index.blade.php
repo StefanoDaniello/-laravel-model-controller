@@ -14,7 +14,7 @@
                             <img src="{{$movie->image}}"  alt="item.series">
                         </div>
                         <div class="card-body">
-                        <h5 class="card-title" id="title-movie"><a href="{{route('books.show', $movie->id)}}">{{$movie->title}}</a></h5>
+                        <h5 class="card-title" id="title-movie"><a href="{{route('movies.show', $movie->id)}}">{{$movie->title}}</a></h5>
                             <p class="card-text">{{$movie->original_title}}</p>
                             <p class="card-text">{{$movie->date}}</p>
                         </div>
