@@ -1,26 +1,21 @@
 @extends('layouts.base_layout')
-@section('title', 'home')
+@section('title', 'movie_details')
 
 @section('content')
-
-   
-    <div class="container text-center ">
-    <h1>{{$movie->title}}</h1>
-        <div class="row d-flex justify-content-center">
+    <div class="container d-flex justify-content-center">
             <div class="card">
                 <div class="card-img">
-                    <img src="{{$movie->image}}"  alt="item.series">
+                    <img src="{{$movie->image}}"  alt="{{$movie->title}}">
                 </div>
                 <div class="card-body">
-                    <h6 class="card-title">{{$movie->title}}</h6>
+                <h5 class="card-title">{{$movie->title}}</h5>
                     <p class="card-text">{{$movie->original_title}}</p>
                     <p class="card-text">{{$movie->date}}</p>
                 </div>
             </div>
-        </div>
     </div>
-    
 @endsection
+
 
 <style lang="scss" scoped>
     img{
@@ -29,8 +24,6 @@
    .card{
        height: 700px !important;
        width: 400px !important;
-       margin: 10px;
-       padding: 10px;
        background-color: black;
        color: white;
     }
@@ -40,3 +33,4 @@
        overflow: hidden;
    }
 </style>
+
